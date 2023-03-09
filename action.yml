@@ -1,13 +1,11 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'gen-md'
+description: 'Generate custom markdown from JS/TS source code'
+author: 'ghgsrt'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    milliseconds: # change this
+        required: true
+        description: 'input description here'
+        default: 'default value if applicable'
 runs:
-  using: 'node16'
-  main: 'index.js'
+    using: 'node16'
+    main: 'dist/index.js'
